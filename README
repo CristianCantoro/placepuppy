@@ -44,6 +44,9 @@ Please note that you need:
    installation information
 * a logger configuration file named 'logger-config.xml' placed in the parent
   directory of 'code.php'
+* to import the database dump in 'placepuppy-db.sql' in a MySQL database
+  (since the database is very simple you can probably use another DBMS with
+  only minor modifications)
 
 == AUTHORS ==
 The code has been written by Cristian Consonni.
@@ -101,5 +104,5 @@ do it citing this project.
 An email to <cristian.consonni@gmail.com> would be appreciated.
 
 == FILE LISTING ==
-The package you received should contain 7 directories and 132 files, see
+The package you received should contain 7 directories and 133 files, see
 CONTENTS file for details.
