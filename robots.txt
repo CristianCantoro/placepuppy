@@ -1,0 +1,79 @@
+#
+# robots.txt
+#
+# This file is to prevent the crawling and indexing of certain parts
+# of your site by web crawlers and spiders run by sites like Yahoo!
+# and Google. By telling these "robots" where not to go on your site,
+# you save bandwidth and server resources.
+#
+# This file will be ignored unless it is at the root of your host:
+# Used:    http://example.com/robots.txt
+# Ignored: http://example.com/site/robots.txt
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/wc/robots.html
+#
+# For syntax checking, see:
+# http://www.sxw.org.uk/computing/robots/check.html
+
+User-agent: *
+# Files
+Disallow: /error
+Disallow: /600/400
+Disallow: /300
+Disallow: /450/300&n=7
+Disallow: /450/300&text=placepuppy.it+loves+puppies!
+Disallow: /800&text=placepuppy.it|puppies+for+you
+Disallow: /450/300&text=Fuchsia+on+blue!&fg=fuchsia&bg=blue
+Disallow: /450/300&text=Greenish+on+orangish!&fg=32B62B&bg=FFA725
+Disallow: /qvga
+Disallow: /skyscraper
+Disallow: /mediumrectangle
+Disallow: /medrect
+Disallow: /squarepopup
+Disallow: /sqrpop
+Disallow: /verticalrectangle
+Disallow: /vertrec
+Disallow: /largerectangle
+Disallow: /lrgrec
+Disallow: /rectangle
+Disallow: /rec
+Disallow: /popunder
+Disallow: /pop
+Disallow: /fullbanner
+Disallow: /fullban
+Disallow: /halfbanner
+Disallow: /halfban
+Disallow: /microbar
+Disallow: /mibar
+Disallow: /button1
+Disallow: /but1
+Disallow: /button2
+Disallow: /but2
+Disallow: /verticalbanner
+Disallow: /vertban
+Disallow: /squarebutton
+Disallow: /sqrbut
+Disallow: /leaderboard
+Disallow: /leadbrd
+Disallow: /wideskyscraper
+Disallow: /wiskyscrpr
+Disallow: /skyscraper
+Disallow: /skyscrpr
+Disallow: /halfpage
+Disallow: /hpge
+Disallow: /cga
+Disallow: /qvga
+Disallow: /vga
+Disallow: /wvga
+Disallow: /svga
+Disallow: /wsvga
+Disallow: /xga
+Disallow: /wxga
+Disallow: /wsxga
+Disallow: /wuxga
+Disallow: /wqxga
+Disallow: /ntsc
+Disallow: /pal
+Disallow: /hd720
+Disallow: /hd1080

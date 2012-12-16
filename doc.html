@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><meta charset="utf-8">
+ <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="imagetoolbar" content="no">
+
+	<!-- Standard Metadata -->
+	<title>Placepuppy</title>
+	<meta name="description" content="Puppy placeholder images for developers">
+	<meta name="author" content="cristian" >
+	<meta name="keywords" content="puppy, placeholder, images, pictures, dog, pixel, breed, pet, hound">
+	<meta name="copyright" content="Cristian Consonni et al.">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+
+	<!-- Dublin Core Metadata -->
+	<meta name="DC.identifier" content="http://placepuppy.it" />
+	<meta name="DC.creator" lang="en" content="Cristian Consonni">
+	<meta name="DC.date.created" lang="en" content="2011-04-15">
+	<meta name="DC.date.modifed" lang="en" content="2011-04-15">
+	<meta name="DC.format" lang="en" content="text/html">
+	<meta name="DC.language" content="en">
+
+	<!-- Open Graph Metadata -->
+	<meta property="og:site_name" content="placepuppy">
+	<meta property="og:title" content="placepuppy">
+	<meta property="og:description" content="Puppy placeholder images for developers 8==3">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="http://placepuppy.it/100/100">
+	<meta property="og:url" content="http://placepuppy.it">
+
+	<!-- Navigation -->
+	<link rel="home" href="/">
+
+	<!-- Icons -->
+	<link rel="shortcut icon" href="/favicon.ico">
+ 
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/placepuppy.css">
+
+	<!-- Analytics -->
+	<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-22736537-1']);
+  		_gaq.push(['_trackPageview']);
+
+		(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+
+	</script>
+</head>
+
+<body class="page-doc">
+<div id="container">
+
+  <div id="header">
+    <a href="./"><img id="image-h" src="./images/homepage/dog_track_logo.png" align="left" width="64" height="64" alt=""></a>		
+    <h1>Documentation</h1>
+  </div>
+
+<div id="preview"> <img id="preview-image" src="/600/400">
+  <div id="preview-link"><a href="600/400" target="_blank">http://placepuppy.it/600/400</a></div>
+</div>
+<form id="demo">
+  <label for="size">Width<br class="nl" />
+    <input type="text" class="text" name="width" id="width" value="600" size="5">
+  </label>
+  </span><br class="nl" /><span class="separator">/</span>
+  <label for="size">Height<br class="nl" />
+    <input type="text" class="text" name="height" id="height" value="400" size="5">
+  </label>
+  </span><br class="nl" /><span class="separator">&amp;</span>
+  <label for="n">n<span class="separator">=</span><br class="nl" />
+    <input type="text" class="text" name="n" id="n" value="" size="5">
+  </label>
+  </span><br class="nl" /><span class="separator">&amp;</span>
+  <label id="text" for="text">Text<span class="separator">=</span><br class="nl" />
+    <input type="text" name="text" id="text" value="" size="15">
+  </label><br />
+  </span><br class="nl" /><span class="separator">&amp;</span>
+  <label for="bg">background<span class="separator">=</span><br class="nl" />
+    <input type="text" name="bg" id="bg" value="" size="8">
+  </label>
+  </span><br class="nl" /><span class="separator">&amp;</span>
+  <label for="fg">foreground<span class="separator">=</span><br class="nl" />
+    <input type="text" name="fg" id="fg" value="" size="8">
+  </label>
+</form>
+<h3 id="documentation">Documentation</h3>
+<h4 id="size">Size</h4>
+<p>width / height</p>
+<ul>
+  <li>
+  Height is optional, if no height is specified the image will be a square. 
+  Example: <a href="300" class="example correct">http://placepuppy.it/300</a>
+  </li>
+  <li><strong>Must</strong> be the first option in the url</li>
+</ul>
+
+<h4 id="num">Image Number</h4>
+<p>&amp;n=14</p>
+<ul>
+  <li>You can request a specific image in the range <strong>1-28</strong>.</li>
+  <li>Find the image number in the <a href="/attribution">attribution</a> page.</li>
+  <li>This is optional.
+    <ul>
+      <li><a href="450/300&n=7" target="_blank" class="example correct">http://placepuppy.it/450/400&amp;n=7</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="text">Custom Text</h4>
+<p>&amp;text=Hello+World</p>
+<ul>
+  <li>Custom text can be entered using a query string at the very end of the url.</li>
+  <li>This is optional, if you don't specify anything you'll see only the image.</li>
+  <li>a-z (upper and lowercase), numbers, and most symbols will work just fine.</li>
+  <li>The vertical bar "|" is transformed in  newline</li>
+  <li>Point size is calculated depending on the image size, minimum point size is 5.</li>
+  <li>If the image is too short text is truncated.</li>
+  <li>You can write spaces as + in the url, so doing math with placepuppy.it may present some difficulties ;-)</li>
+    <ul>
+      <li><a href="450/300&text=placepuppy.it+loves+puppies!" target="_blank" class="example correct">example 1</a></li>
+      <li><a href="/800&text=placepuppy.it|puppies+for+you" target="_blank" class="example correct">example 2</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="text">Custom Colors</h4>
+<p>&amp;bg=yellow&amp;fg=yellow</p>
+<ul>
+  <li>These options work only if text is present, if there is no text these options have no consequences.</li>
+  <li>You can specify a custom color for background (&amp;bg) and text (foreground, &amp;fg).</li>
+  <li>This is optional, if you don't specify anything you will obtain white text (&amp;fg=FFFFFF) on dark grey (&amp;bg=000008) background.</li>
+  <li>you can either use an hex code (without "#") to specify the color or the <a href="http://en.wikipedia.org/wiki/HTML_color_names" title="HTML color names">HTML color name</a>.</li>
+    <ul>
+      <li><a href="450/300&text=Fuchsia+on+blue!&fg=fuchsia&bg=blue" target="_blank" class="example correct">example 1</a></li>
+      <li><a href="450/300&text=Greenish+on+orangish!&fg=32B62B&bg=FFA725" target="_blank" class="example correct">example 2</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h5>CSS 1-2.0 / HTML 3.2-4 / VGA color names</h5>
+<table>
+  <thead>
+    <tr>
+	<th>Name</th>
+	<th>Sample</th>
+	<th><a href="http://en.wikipedia.org/wiki/wiki/Web_colors#Hex_triplet" title="Web colors">Hex triplet</a></th>
+    </tr>
+  </thead>
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/White" title="White">White</a></th>
+<td style="border-style:none;background-color:#FFFFFF"></td>
+<td style="border-right-width:1px;font-family:monospace;">#FFFFFF</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Silver_(color)" title="Silver (color)">Silver</a></th>
+<td style="border-style:none;background-color:#C0C0C0"></td>
+<td style="border-right-width:1px;font-family:monospace;">#C0C0C0</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Gray" title="Gray" class="mw-redirect">Gray</a></th>
+<td style="border-style:none;background-color:#808080"></td>
+<td style="border-right-width:1px;font-family:monospace;">#808080</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Black" title="Black">Black</a></th>
+<td style="border-style:none;background-color:#000000"></td>
+<td style="border-right-width:1px;font-family:monospace;">#000000</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Red" title="Red">Red</a></th>
+<td style="border-style:none;background-color:#FF0000"></td>
+<td style="border-right-width:1px;font-family:monospace;">#FF0000</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Maroon_(color)" title="Maroon (color)">Maroon</a></th>
+<td style="border-style:none;background-color:#800000"></td>
+<td style="border-right-width:1px;font-family:monospace;">#800000</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Yellow" title="Yellow">Yellow</a></th>
+<td style="border-style:none;background-color:#FFFF00"></td>
+<td style="border-right-width:1px;font-family:monospace;">#FFFF00</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Olive_(color)" title="Olive (color)" class="mw-redirect">Olive</a></th>
+<td style="border-style:none;background-color:#808000"></td>
+<td style="border-right-width:1px;font-family:monospace;">#808000</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Lime_(color)" title="Lime (color)">Lime</a></th>
+<td style="border-style:none;background-color:#00FF00"></td>
+<td style="border-right-width:1px;font-family:monospace;">#00FF00</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Green" title="Green">Green</a></th>
+<td style="border-style:none;background-color:#008000"></td>
+<td style="border-right-width:1px;font-family:monospace;">#008000</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Aqua_(color)" title="Aqua (color)">Aqua</a></th>
+<td style="border-style:none;background-color:#00FFFF"></td>
+<td style="border-right-width:1px;font-family:monospace;">#00FFFF</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Teal_(color)" title="Teal (color)" class="mw-redirect">Teal</a></th>
+<td style="border-style:none;background-color:#008080"></td>
+<td style="border-right-width:1px;font-family:monospace;">#008080</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Blue" title="Blue">Blue</a></th>
+<td style="border-style:none;background-color:#0000FF"></td>
+<td style="border-right-width:1px;font-family:monospace;">#0000FF</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Navy_blue_(color)" title="Navy blue (color)" class="mw-redirect">Navy</a></th>
+<td style="border-style:none;background-color:#000080"></td>
+<td style="border-right-width:1px;font-family:monospace;">#000080</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Fuchsia_(color)" title="Fuchsia (color)">Fuchsia</a></th>
+<td style="border-style:none;background-color:#FF00FF"></td>
+<td style="border-right-width:1px;font-family:monospace;">#FF00FF</td>
+</tr>
+
+<tr>
+<td style="border-left-width:1px;text-align:left; font-weight:normal"><a href="http://en.wikipedia.org/wiki/Purple" title="Purple">Purple</a></th>
+<td style="border-style:none;background-color:#800080"></td>
+<td style="border-right-width:1px;font-family:monospace;">#800080</td>
+</tr>
+</table>
+
+<h4 id="format">Image Format</h4>
+<p>.jpg</p>
+<ul>
+  <li>All images on http://placepuppy.it/ are served as jpg images.</li>
+</ul>
+
+<h4 id="standards">Standard Image Sizes</h4>
+<p>Several standard dimensions are included in placepuppy.it including <a href="http://www.iab.net/iab_products_and_industry_services/1421/1443/1452">ad sizes</a> and <a href="http://en.wikipedia.org/wiki/File:Vector_Video_Standards2.svg">screen resolution sizes</a>.
+Examples:
+<ul>
+  <li><a href="qvga" target="_blank" class="example correct">http://placepuppy.it/qvga</a></li>
+  <li><a href="skyscraper" target="_blank" class="example correct">http://placepuppy.it/skyscraper</a></li>
+</ul>
+</p>
+
+<h5 id="ad">Ad Sizes</h5>
+<table id="ad">
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Shortcuts</th>
+      <th>Dimensions</th>
+      <th>Regular Expression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="mediumrectangle">mediumrectangle</a></td>
+      <td><a href="medrect">medrect</a></td>
+      <td>300&times;250</td>
+      <td>^(med)\w+(rec\w+)</td>
+    </tr>
+    <tr><td><a href="squarepopup">squarepopup</a></td>
+      <td><a href="sqrpop">sqrpop</a></td>
+      <td>250&times;250</td>
+      <td>^(s\w+pop)</td>
+    </tr>
+    <tr><td><a href="verticalrectangle">verticalrectangle</a></td>
+      <td><a href="vertrec">vertrec</a></td>
+      <td>240&times;400</td>
+      <td>^(ver)\w+(rec)</td>
+    </tr>
+    <tr><td><a href="largerectangle">largerectangle</a></td>
+      <td><a href="lrgrec">lrgrec</a></td>
+      <td>336&times;280</td>
+      <td>^(large|lrg)(rec)</td>
+    </tr>
+    <tr><td><a href="rectangle">rectangle</a></td>
+      <td><a href="rec">rec</a></td>
+      <td>180&times;150</td>
+      <td> ^(rec)</td>
+    </tr>
+    <tr><td><a href="popunder">popunder</a></td>
+      <td><a href="pop">pop</a></td>
+      <td>720&times;300</td>
+      <td>^(pop)</td>
+    </tr>
+    <tr><td><a href="fullbanner">fullbanner</a></td>
+      <td><a href="fullban">fullban</a></td>
+      <td>468&times;60</td>
+      <td>^(f\w+ban)</td>
+    </tr>
+    <tr><td><a href="halfbanner">halfbanner</a></td>
+      <td><a href="halfban">halfban</a></td>
+      <td>234&times;60</td>
+      <td>^(h\w+ban)</td>
+    </tr>
+    <tr><td><a href="microbar">microbar</a></td>
+      <td><a href="mibar">mibar</a></td>
+      <td>88&times;31</td>
+      <td>^(m\w+bar)</td>
+    </tr>
+    <tr><td><a href="button1">button1</a></td>
+      <td><a href="but1">but1</a></td>
+      <td>120&times;90</td>
+      <td>^(b\w+1)</td>
+    </tr>
+    <tr><td><a href="button2">button2</a></td>
+      <td><a href="but2">but2</a></td>
+      <td>120&times;60</td>
+      <td>^(b\w+2)</td>
+    </tr>
+    <tr><td><a href="verticalbanner">verticalbanner</a></td>
+      <td><a href="vertban">vertban</a></td>
+      <td>120&times;240</td>
+      <td>^(ver\w+ban)</td>
+    </tr>
+    <tr><td><a href="squarebutton">squarebutton</a></td>
+      <td><a href="sqrbut">sqrbut</a></td>
+      <td>125&times;125</td>
+      <td>^(s\w+but)</td>
+    </tr>
+    <tr><td><a href="leaderboard">leaderboard</a></td>
+      <td><a href="leadbrd">leadbrd</a></td>
+      <td>728&times;90</td>
+      <td>^(lea\w+rd)</td>
+    </tr>
+    <tr><td><a href="wideskyscraper">wideskyscraper</a></td>
+      <td><a href="wiskyscrpr">wiskyscrpr</a></td>
+      <td>60&times;600</td>
+      <td>^(w\w+sk\w+r)</td>
+    </tr>
+    <tr><td><a href="skyscraper">skyscraper</a></td>
+      <td><a href="skyscrpr">skyscrpr</a></td>
+      <td>120&times;600</td>
+      <td>^(sk\w+r)</td>
+    </tr>
+    <tr><td><a href="halfpage">halfpage</a></td>
+      <td><a href="hpge">hpge</a></td>
+      <td>300&times;600</td>
+      <td>^(h\w+g)</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="screen">Screen Standards</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Dimensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="cga">cga</a></td>
+      <td>320x200</td>
+    </tr>
+    <tr><td><a href="qvga">qvga</a></td>
+      <td>320x240</td>
+    </tr>
+    <tr><td><a href="vga">vga</a></td>
+      <td>640x480</td>
+    </tr>
+    <tr><td><a href="wvga">wvga</a></td>
+      <td>800x480</td>
+    </tr>
+    <tr><td><a href="svga">svga</a></td>
+      <td>800x480</td>
+    </tr>
+    <tr><td><a href="wsvga">wsvga</a></td>
+      <td>1024x600</td>
+    </tr>
+    <tr><td><a href="xga">xga</a></td>
+      <td>1024x768</td>
+    </tr>
+    <tr><td><a href="wxga">wxga</a></td>
+      <td>1280x800</td>
+    </tr>
+    <tr><td><a href="wsxga">wsxga</a></td>
+      <td>1440x900</td>
+    </tr>
+    <tr><td><a href="wuxga">wuxga</a></td>
+      <td>1920x1200</td>
+    </tr>
+    <tr><td><a href="wqxga">wqxga</a></td>
+      <td>2560x1600</td>
+    </tr>
+  </tbody>
+</table>
+<h5 id="video">Video Standards</h5>
+<table>
+  <thead>
+    <tr>
+      <th>Keyword</th>
+      <th>Dimensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="ntsc">ntsc</a></td>
+      <td>720x480</td>
+    </tr>
+    <tr><td><a href="pal">pal</a></td>
+      <td>768x576</td>
+    </tr>
+    <tr><td><a href="hd720">hd720</a></td>
+      <td>1280x720</td>
+    </tr>
+    <tr><td><a href="hd1080">hd1080</a></td>
+      <td>1920x1080</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="flash">Flash Support</h5>
+<p>Since <a href="http://dummyimage.com/#flash">dummyimage.com</a> works with Flash applications also placepuppy.it should.</p>
+<ul>
+<li>Images are served with a specified <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.13" class="example">Content-Length</a> so they can be used in preloaders</li>
+<li>placepuppy.it uses a <a href="crossdomain.xml" class="example">crossdomain.xml</a> file</li>
+</ul>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('#demo input, #demo select').change(function() {
+		updateDemo();
+	});
+});
+
+var url;
+
+function updateDemo() {
+	var url = 'http://placepuppy.it/';
+	$('#demo input, #demo select').each(function(count) {
+		if( $(this).val() ) {
+			switch(count) {
+				case 0:
+					url += $(this).val();
+					break;
+				case 1:
+					url += '/' + $(this).val();
+					break;
+				case 2:
+					url += '&n=' + $(this).val();
+					break;
+				case 3:
+					url += '&text=' + $(this).val().replace(/\s/ig, '+');
+					break;
+				case 4:
+					url += '&bg=' + $(this).val();
+					break;
+				case 5:
+					url += '&fg=' + $(this).val();
+					break;
+			}
+		}
+	});
+	$('#preview-image').attr('src',url).next('#preview-link').find('a').attr('href',url).text(url);
+}
+</script>
+		<div id="footer" role="contentinfo">
+          <p>Created by Cristian Consonni <span class="amp">&amp;</span> Melian del Doriath.</p>
+          <p>This site should be mobile-friendly, for those who need some puppy-cuteness while on the move.
+          You can also grab a complete copy of the site on <a href="/github">github</a>. The code is released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU GPL license</a>, happy hacking! 
+          The text are released under the <a href="creativecommons.org/licenses/by/3.0/">Creative Commons 3.0 - Attribution license</a>.
+          This mean that you can reuse the text provided you cite placepuppy.it.
+          Remember that any feedback is appreciated.
+          </p>
+          <p>Image attribution: <a href="attribution">attribution</a> &amp; <a href="attribution#acknowledgements">acknowlegdements</a> &dash; documentation: <a href="/doc">docs</a>.</p>
+          <div id="ascii-puppy">
+			<pre>
+    _.-.
+  '( ^{_}    (
+    `~\`-----'\
+       )_)---)_)</pre>This site is dedicated to Silvia "il cane" Tilly.
+		</div>
+		</div><!-- /#footer -->
+</div>
+</body>
+</html>

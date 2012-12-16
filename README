@@ -1,0 +1,105 @@
+/******************************************************************************
+* 
+* http://placepuppy.it
+*
+* Cute puppy image placeholders
+*
+* Copyright (C) 2012 Cristian Consonni 
+*                    <cristian.consonni@gmail.com>.
+*
+/*****************************************************************************/
+
+placepuppy is a placeholder image generator written in PHP.
+
+placepuppy is a hobby project, born as a gift for a friend (and what's better
+than some puppy-cuteness?) and continued as a mean to explore PHP, CSS, HTML 
+and other web technologies.
+
+Some features:
+* some basic responsive layout
+* clean URIs
+* event logging
+
+In it you will probably not find the best solution to your problems, you also
+may find some choices objectionable (e.g. why have you used a database for 
+this?); but I hope you can use it as a mean to learn and have the same fun I 
+had while writing it.
+
+== DETAILS ==
+All the work is done by the following files:
+* code.php
+* error.php
+Take also a moment to look at '.htaccess' file.
+
+Please note that you need:
+* a configuration file named 'config.ini' is needed to read the credentials 
+  for your database. This file should not be publicly available, for instance
+  it should stay outside of your web root. 'code.php' assumes it is in its
+  parent directory.
+* 'log4php' logging library, you can get it at:
+      http://logging.apache.org/log4php/
+   please note that  the code assumes the source for 'Logger.php'
+   is in a directory named 'log4php' in the parent directory of 'code.php'
+   See http://logging.apache.org/log4php/install.html for more detailed
+   installation information
+* a logger configuration file named 'logger-config.xml' placed in the parent
+  directory of 'code.php'
+
+== AUTHORS ==
+The code has been written by Cristian Consonni.
+This site Would not have been possible without the help and advice of Chiara
+"Melian" in choosing the photos.
+
+The code in 'code.php' and '.htaccess' is derived from "Dynamic Dummy Image" 
+by Russell Heimlich.
+
+In this package some third party javascript plugins are redistributed: 
+* JQuery by jQuery Foundation and other contributors;
+* imageCloud by Alvaro Montoro;
+* Easy Slide by Michael Lo;
+
+The images are released under various conditions (ranging from Public Domain
+to Creative Commons - Attribution - Share Alike).
+
+For short, this site has profited of the work of many people, see the AUTHORS 
+file for details.
+
+== DEDICATION ==
+This site is dedicated to Silvia "il cane" Tilly.
+
+== CONTACTS ==
+You can send your feedback at <cristian.consonni@gmail.com>
+
+If you find any problems with the site (copyright, technical, etc.) don't
+exithate to drop an email.
+
+== LICENSE NOTICE ==
+The modified versions of 'code.php' and '.htacess' in use at 
+http://placepuppy.it are by Cristian Consonni.
+
+The code files are released under  the GNU General Public License v. 3 or 
+any later at your choice. <http://www.gnu.org/licenses/gpl.html>
+
+Here a short version of the notice. See COPYING for details.
+---
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+---
+
+Text and web pages are released under a Creative Commons 3.0 license
+<http://placepuppy.org/creativecommons.org/licenses/by/3.0/>
+This means that if you want to reuse or modify the web pages and texts you can
+do it citing this project. 
+
+An email to <cristian.consonni@gmail.com> would be appreciated.
+
+== FILE LISTING ==
+The package you received should contain 7 directories and 132 files, see
+CONTENTS file for details.

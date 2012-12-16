@@ -1,0 +1,54 @@
+.showbg{// for fadeout effect *This is optional
+background-color: black;
+}
+
+.link_nor{// for clickable normal link
+background-color: #333333;
+font: normal 76% "Arial", "Lucida Grande",Verdana, Sans-Serif;
+border: 2px solid #000066;
+padding:0px 4px 0px 4px;
+text-align:center;
+color:black;
+}
+
+
+.link_act
+{// for clickable active link
+background-color: #000066; 
+font: normal 76% "Arial", "Lucida Grande",Verdana, Sans-Serif;
+border: 2px solid #000066;
+padding:0px 4px 0px 4px;
+text-align:center;
+color:black;
+}
+
+span{// for watermark
+font: normal 76% "Arial", "Lucida Grande",Verdana, Sans-Serif;
+color:black
+}
+
+.gray
+{// for cover
+background-color: gray;
+position: absolute;
+border: 0px solid #9F6D11; //arancio smorto
+z-index: 100;
+}
+
+img{// for image border
+border: 0px solid #663300; //arancio scuro
+background-color: #663300
+}
+
+.opa{// for watermark opacity
+color:white;
+padding:10px 20px 0px 20px;
+position: absolute;
+z-index: 101;
+background-color: #FFA928; //arancio acceso 
+opacity:0.5;
+filter: alpha(opacity=50);
+filter:progid:DXImageTransform.Microsoft.Alpha
+(Opacity=100,FinishOpacity=50, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16);
+-moz-opacity: 0.5;
+}
