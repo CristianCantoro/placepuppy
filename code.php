@@ -1,28 +1,6 @@
 <?php
 /******************************************************************************
-* Dynamic Dummy Image Generator - DummyImage.com
-* Copyright (c) 2010 Russell Heimlich
-* with a contribution by Ric Ewing.
-*
-* Permission is hereby granted, free of charge, to any person obtaining a 
-* copy of this software and associated documentation files (the "Software"), 
-* to deal in the Software without restriction, including without limitation 
-* the rights to use, copy, modify, merge, publish, distribute, sublicense, 
-* and/or sell copies of the Software, and to permit persons to whom the 
-* Software is furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-* AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-* LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-* FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-* IN THE SOFTWARE.
-*
-* modified version used at http://placepuppy.it
+* http://placepuppy.it
 * Copyright (C) 2012 Cristian Consonni <cristian.consonni@gmail.com>.
 *
 * This program is free software: you can redistribute it and/or modify
@@ -42,6 +20,11 @@
 * See README for further details.
 *
 ******************************************************************************/
+date_default_timezone_set('Europe/Rome');
+
+$err_level = error_reporting(0);
+error_reporting($err_level);
+
 session_start();
 require_once( '../log4php/Logger.php' );
 Logger::configure('../logger-config.xml');
@@ -50,21 +33,18 @@ $logger = Logger::getLogger("code.php");
 $x = strtolower($_GET["x"]);
 include("color.class.php");
 
-//header("Content-Type: text/html");
-//printf("x: %s<br />", $x);
-
 $logger->info("Serving request: $x");
 
 $dimensions = explode('/',$x);
 $width = preg_replace('/[^\d]/i', '',$dimensions[0]);
 $height = $width;
-if ($dimensions[1]) {
+if (array_key_exists(1, $dimensions)) {
   $height = preg_replace('/[^\d]/i', '',$dimensions[1]);
 }
 $prop = round($width/$height, 2);
 
 $bg_color = "#000008";
-if ($_GET['bg']) {
+if (array_key_exists('bg' ,$_GET)) {
   $bg_color = $_GET['bg'];
 }
 $background = new color();
@@ -74,7 +54,7 @@ if(!$background->get_hex()) {
 }
 
 $fg_color = "#FFFFFF";
-if ($_GET['fg']) {
+if (array_key_exists('fg' ,$_GET)) {
   $fg_color = $_GET['fg'];
 }
 $foreground = new color();
@@ -100,7 +80,7 @@ if(!$mysqli) {
 }
 
 if(!$error_flag) {
-  if ($_GET['n']) {
+  if (array_key_exists('n' ,$_GET)) {
     $number = $_GET['n'];
     $number = preg_replace('/\|/i', "\n", $number);
     if($number < 1 || $number > 28) 
@@ -149,7 +129,7 @@ $img_fullname = $img_path.$img_name;
 $image = new Imagick($img_fullname);
 scale_image($img_p,$height,$width, $image);
 
-if ($_GET['text']) {
+if (array_key_exists('text' ,$_GET)) {
   $text = $_GET['text'];
   $text = preg_replace('/\|/i', "\n", $text);
   $pointsize = max(min($width/strlen($text)*1.20, $height*0.20),5);
@@ -183,7 +163,7 @@ function scale_image($img_p,$height,$width, $image) {
   //printf("tmp_w: %s, tmp_h: %s<br />", $tmp_w, $tmp_h);
   if($tmp_w >= $width && $tmp_h >= $height) {
     $image->resizeImage($tmp_w, $tmp_h, Imagick::FILTER_SINC, 1);
-    $image->extentImage($width, $height, floor(-0.5*($tmp_w-$width)), floor(-0.5*($tmp_h-$height)));
+    $image->extentImage($width, $height, floor(abs(0.5*($tmp_w-$width))), floor(abs(0.5*($tmp_h-$height))));
   }
   else {
     if($tmp_h < $height) {
