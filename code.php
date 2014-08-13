@@ -14,16 +14,13 @@
 * GNU General Public License for more details.
 *
 * You should have received a copy of the GNU General Public License
-* along with this program (see COPYING).  
+* along with this program (see COPYING).
 * If not, see <http://www.gnu.org/licenses/>.
 *
 * See README for further details.
 *
 ******************************************************************************/
 date_default_timezone_set('Europe/Rome');
-
-$err_level = error_reporting(0);
-error_reporting($err_level);
 
 session_start();
 require_once( '../log4php/Logger.php' );
